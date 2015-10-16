@@ -21,21 +21,7 @@ public class OperacionesTest {
     public OperacionesTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
     
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     @Test
     public void testSomeMethod() {
@@ -43,4 +29,16 @@ public class OperacionesTest {
         fail("The test case is a prototype.");
     }
     
+    @Test
+    public void MostrarListadoxFechas() {
+     Eventos evento = new Eventos("PROGRAMACION JAVA","16/10/2015","AV.LAS TORRES CHORRILLOS UPSJB");
+     String lista;
+     lista=evento.ListarAlabeticamente();
+    assertEquals(lista,"Hola");
+        
+        
+    
+    }
+
+  
 }
