@@ -5,6 +5,8 @@
  */
 package mispruebas;
 
+import java.util.Date;
+
 /**
  *
  * @author percy
@@ -12,19 +14,15 @@ package mispruebas;
 public class Eventos {
  
 private String nombre;
-private String fecha;
+private String fechainicio;
+private String fechafin;
 private String lugar;
+private String categoria;
+private String descripcion;
+private String imagen;
 
-    public Eventos(String nombre, String fecha, String lugar) {
-        this.nombre = nombre;
-        this.fecha = fecha;
-        this.lugar = lugar;
+    public Eventos() {
     }
-
-    public String ListarAlabeticamente(){
-        return (this.nombre);
-    }   
-    
     
     public String getNombre() {
         return nombre;
@@ -34,12 +32,20 @@ private String lugar;
         this.nombre = nombre;
     }
 
-    public String getFecha() {
-        return fecha;
+    public String getFechainicio() {
+        return fechainicio;
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setFechainicio(String fechainicio) {
+        this.fechainicio = fechainicio;
+    }
+
+    public String getFechafin() {
+        return fechafin;
+    }
+
+    public void setFechafin(String fechafin) {
+        this.fechafin = fechafin;
     }
 
     public String getLugar() {
@@ -50,6 +56,41 @@ private String lugar;
         this.lugar = lugar;
     }
 
+    public String getCategoria() {
+        return categoria;
+    }
 
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
     
-}
+    
+    
+    
+    //public String CantidadDescrip (String des){
+            
+    //this.descripcion=des;
+    
+    //if (des.length()>10){    
+    //System.out.print("debe ingresa menos caracteres, total : "+des.length());
+        
+    //}
+    //return des;
+ //}
+     }
