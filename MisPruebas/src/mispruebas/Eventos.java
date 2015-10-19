@@ -14,8 +14,8 @@ import java.util.Date;
 public class Eventos {
  
 private String nombre;
-private String fechainicio;
-private String fechafin;
+private Date fechainicio;
+private Date fechafin;
 private String lugar;
 private String categoria;
 private String descripcion;
@@ -32,19 +32,19 @@ private String imagen;
         this.nombre = nombre;
     }
 
-    public String getFechainicio() {
+    public Date getFechainicio() {
         return fechainicio;
     }
 
-    public void setFechainicio(String fechainicio) {
+    public void setFechainicio(Date fechainicio) {
         this.fechainicio = fechainicio;
     }
 
-    public String getFechafin() {
+    public Date getFechafin() {
         return fechafin;
     }
 
-    public void setFechafin(String fechafin) {
+    public void setFechafin(Date fechafin) {
         this.fechafin = fechafin;
     }
 
@@ -80,17 +80,5 @@ private String imagen;
         this.imagen = imagen;
     }
     
-    
-    
-    
-    //public String CantidadDescrip (String des){
-            
-    //this.descripcion=des;
-    
-    //if (des.length()>10){    
-    //System.out.print("debe ingresa menos caracteres, total : "+des.length());
-        
-    //}
-    //return des;
- //}
-     }
+   
+       }

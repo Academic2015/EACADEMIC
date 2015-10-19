@@ -5,6 +5,10 @@
  */
 package mispruebas;
 import java.util.*;
+import java.text.SimpleDateFormat;
+import java.text.ParseException;
+import java.util.Date;
+
 
 
 
@@ -36,4 +40,24 @@ else
 
 return respuesta2;
 
-  } }
+  } 
+public Date DateInicio(String fechai){
+
+SimpleDateFormat formato =new SimpleDateFormat("dd/mm/yy");
+Date fecha= null;
+try{
+
+fecha=formato.parse(fechai);
+}
+    catch(ParseException ex)
+  {}
+ return fecha;       
+}
+
+
+
+}
+
+
+
+
