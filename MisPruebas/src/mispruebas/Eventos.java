@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  *
- * @author percy
+ *
  */
 public class Eventos {
  
